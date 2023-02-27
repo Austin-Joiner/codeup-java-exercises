@@ -66,7 +66,7 @@ public class HelloWorld {
         //short shortNum = 32768; // error
         //short shortNum = -32769;// error
 
-        System.out.println(shortNum);
+        //System.out.println(shortNum);
         System.out.println(shortMax);
 
         int numMax = Integer.MAX_VALUE;// max is 2147483647
