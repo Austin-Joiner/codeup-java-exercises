@@ -4,7 +4,10 @@ public class HelloWorld {
         System.out.println("World!");
         int myFavoriteNumber = 21;System.out.println(myFavoriteNumber);
         String myString = "My Favorite Number";System.out.println(myString);//doesn't work with char because it's not compatible.
+
         double myNumber = 3.14; // 2 ways to fix this is 1. double instead of float as the data type or 2. (float) before the value.
+        float newTest = (float) myNumber;// this is another way of doing it
+        System.out.println(newTest);
         System.out.println(myNumber);
 
 
@@ -15,6 +18,9 @@ public class HelloWorld {
         int x = 5;//this increments before the print
         System.out.println(++x);// now this increments before so instead of 5 it already adds 1 so its 6
         System.out.println(x);// since the above line is already 6 this jst calls on x new vale again which is still 6
+
+        class class = "hello";// gives error identifier expected and changes to orange same color as the data type.
+
     }
 }
 
