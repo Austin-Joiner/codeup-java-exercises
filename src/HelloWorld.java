@@ -1,7 +1,9 @@
 public class HelloWorld {
     public static void main(String[] args) { //renaming main kills the code
         System.out.print("Hello, ");
-        System.out.print("World!");
+        System.out.println("World!");
+        int myFavoriteNumber = 21;System.out.println(myFavoriteNumber);
+        String myString = "My Favorite Number";System.out.println(myString);
     }
 }
 
