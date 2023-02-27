@@ -3,7 +3,8 @@ public class HelloWorld {
         System.out.print("Hello, ");
         System.out.println("World!");
         int myFavoriteNumber = 21;System.out.println(myFavoriteNumber);
-        String myString = "My Favorite Number";System.out.println(myString);
+        String myString = "My Favorite Number";System.out.println(myString);//doesnt work with char because it's not compatible.
+
     }
 }
 
