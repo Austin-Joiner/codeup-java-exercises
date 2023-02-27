@@ -8,9 +8,13 @@ public class HelloWorld {
         System.out.println(myNumber);
 
 
-        int x = 5;
-        System.out.println(x++);// this is 5 incrementing 1 to is but after the print
-        System.out.println(x);// so since the line above happens and increment and stays at 5 this line is 6 because 5 + 1 = 6.
+        //int x = 5;// this increments after the print
+        //System.out.println(x++);// this is 5 incrementing 1 to is but after the print
+        //System.out.println(x);// so since the line above happens and increment and stays at 5 this line is 6 because 5 + 1 = 6.
+
+        int x = 5;//this increments before the print
+        System.out.println(++x);// now this increments before so instead of 5 it already adds 1 so its 6
+        System.out.println(x);// since the above line is already 6 this jst calls on x new vale again which is still 6
     }
 }
 
