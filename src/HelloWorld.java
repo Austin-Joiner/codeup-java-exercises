@@ -4,7 +4,7 @@ public class HelloWorld {
         System.out.println("World!");
         int myFavoriteNumber = 21;System.out.println(myFavoriteNumber);
         String myString = "My Favorite Number";System.out.println(myString);//doesn't work with char because it's not compatible.
-        long myNumber = 3.14; System.out.print(myNumber); //3.14 will also shoot back an error with long
+        long myNumber = 123L; System.out.print(myNumber); // it seems only number values are accepted the 'L' is removed on print.
     }
 }
 
