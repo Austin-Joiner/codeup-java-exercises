@@ -41,11 +41,24 @@ public class HelloWorld {
         //int y = 4;
         //y = y * x;
 
-        int x = 3;
-        int y = 4;
-        y *= x; // shorthand of y = y * x
+        //int x = 3;
+        //int y = 4;
+        //y *= x; // shorthand of y = y * x
+        //System.out.println(y);
 
+
+        //int x = 10;
+        //int y = 2;
+        //x = x / y;
+        //y = y - x;
+
+        int x = 10;
+        int y = 2;
+        x /= y;
+        y -= x;
+        System.out.println(x);
         System.out.println(y);
+
     }
 }
 
