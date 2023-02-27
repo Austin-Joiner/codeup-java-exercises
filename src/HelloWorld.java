@@ -4,7 +4,8 @@ public class HelloWorld {
         System.out.println("World!");
         int myFavoriteNumber = 21;System.out.println(myFavoriteNumber);
         String myString = "My Favorite Number";System.out.println(myString);//doesn't work with char because it's not compatible.
-        long myNumber = 123L; System.out.print(myNumber); // it seems only number values are accepted the 'L' is removed on print.
+        long myNumber = 123; System.out.print(myNumber); // with the L removed it gives the same result.
+        // so it seems only whole numbers are able to be used with long not decimal numbers.
     }
 }
 
