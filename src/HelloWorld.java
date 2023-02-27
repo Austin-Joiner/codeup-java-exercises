@@ -59,6 +59,24 @@ public class HelloWorld {
         System.out.println(x);
         System.out.println(y);
 
+
+// if the number is bigger or smaller than the data type it will have an error.
+
+        short shortMax = Short.MAX_VALUE; //32767
+        //short shortNum = 32768; // error
+        //short shortNum = -32769;// error
+
+        System.out.println(shortNum);
+        System.out.println(shortMax);
+
+        int numMax = Integer.MAX_VALUE;// max is 2147483647
+        //int numVar = 2147483648 // error number too large.
+        int numMin = Integer.MIN_VALUE;// min is -2147483648
+        //int numVar = -2147483649; // number too large
+
+        System.out.println(numMax);
+        System.out.println(numMin);
+        //System.out.println(numVar);
     }
 }
 
