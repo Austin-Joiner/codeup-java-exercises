@@ -33,11 +33,19 @@ public class HelloWorld {
 
 //        int x = 4;
 //        x = x + 5;
-        int x = 4; // x = 4
-        x += 5; // 5 + 4 = 9
-        System.out.println(x);
+        //int x = 4; // x = 4
+       //x += 5; // 5 + 4 = 9
+        //System.out.println(x);
 
+        //int x = 3;
+        //int y = 4;
+        //y = y * x;
 
+        int x = 3;
+        int y = 4;
+        y *= x; // shorthand of y = y * x
+
+        System.out.println(y);
     }
 }
 
