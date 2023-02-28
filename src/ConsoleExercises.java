@@ -38,10 +38,12 @@ public class ConsoleExercises {
 
         Scanner measurements = new Scanner (System.in);
 
+        measurements.useDelimiter("\n");
+
         System.out.print("Enter Width and Length: ");
 
-//        int widthInput = measurements.nextInt();
-//        int lengthInput = measurements.nextInt();
+        //int widthInput = measurements.nextInt();
+        //int lengthInput = measurements.nextInt();
 
         String widthInput = measurements.nextLine();
         String lengthInput = measurements.nextLine();
@@ -52,8 +54,12 @@ public class ConsoleExercises {
 
         System.out.println("width: " + widthInput);
         System.out.println("length: " + lengthInput);
+//        System.out.println("This is the area of the room: " + widthInput * lengthInput + "!");
+//        System.out.println("This is the Perimeter of the room: " + (widthInput + lengthInput) * 2 + "!");
         System.out.println("This is the area of the room: " + width * length + "!");
         System.out.println("This is the Perimeter of the room: " + (width + length) * 2 + "!");
+
+
 
 
     }
