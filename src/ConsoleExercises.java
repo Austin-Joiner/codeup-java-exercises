@@ -26,5 +26,11 @@ public class ConsoleExercises {
         System.out.println("Your Three Words Are: " + "\n" + userWordOne + "\n" + userWordsTwo + "\n" + userWordsThree);// if you enter less than three words it does nothing because the console is still waiting for 3 words and if you do more than three than it only includes the first 3.
 
 
+
+        Scanner sentence = new Scanner(System.in);
+
+        System.out.print("Enter Sentence Here: ");
+        String userSentence = sentence.next();// if you used .next() it only grabs the first word.
+        System.out.println(userSentence);
     }
 }
