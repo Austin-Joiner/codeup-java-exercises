@@ -30,7 +30,7 @@ public class ConsoleExercises {
         Scanner sentence = new Scanner(System.in);
 
         System.out.print("Enter Sentence Here: ");
-        String userSentence = sentence.next();// if you used .next() it only grabs the first word.
+        String userSentence = sentence.nextLine();// if you used .next() it only grabs the first word.
         System.out.println(userSentence);
     }
 }
