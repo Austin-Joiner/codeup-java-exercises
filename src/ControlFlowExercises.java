@@ -18,7 +18,7 @@ public class ControlFlowExercises {
            i = i + 2;
 
 
-        } while (i < 100); {
+        } while (i <= 100); {
 
         }
 
