@@ -1,6 +1,6 @@
 public class StringExercise {
     public static void main(String[] args) {
-
+// q 1
         String makeLine = "We don't need no education \nWe don't need no thought control";
         System.out.println(makeLine);
 
@@ -12,5 +12,11 @@ public class StringExercise {
 
         String backSlash = "I can do backslashes \\, double backslashes \\\\,\nand the amazing triple backslash \\\\\\!";
         System.out.println(backSlash);
+
+        // Q 2
+
+
+
+
     }
 }
