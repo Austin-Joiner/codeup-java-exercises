@@ -37,15 +37,39 @@ public class ControlFlowExercises {
 //        }
 
         //1.b question 3
-        long i = 2;
+//        long i = 2;
+//
+//        do {
+//            System.out.println(i);
+//            i = i * i;
+//
+//        } while (i < 1000000); {
+//
+//        }
 
-        do {
+        //c question 1
+        //1.a refactored into a for loop
+//
+//
+//        for (int i = 5; i <= 15; i++) {
+//            System.out.print(i + " ");
+//
+//        }
+
+        //
+        //c question 2
+        //1.b refactored question 1
+
+         for (int i = 0; i <= 100; i += 2) {
             System.out.println(i);
-            i = i * i;
+         }
 
-        } while (i < 1000000); {
 
-        }
+
+
+        //
+        //c question 3
+
 
     }
 }
