@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -76,10 +78,71 @@ public class ControlFlowExercises {
         //c question 3
         //1.b refactored question 3
 //        long i = 2;
-        for (long i = 2; i < 1000000; i *= i) {
-            System.out.println(i);
+//        for (long i = 2; i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
+
+
+
+        //
+        //
+        //
+        //
+
+
+//        Question 2
+
+//        for (int i = 1; i < 100; i++) {
+//            System.out.println(i);
+//
+//            if (i % 5 == 0 && i % 3 == 0) {
+//                System.out.println("fizzBuzz: " + i);
+//                continue;
+//            }
+//            if (i %  3 == 0) {
+//                System.out.println("Fizz: " + i);
+//            }
+//            if (i % 5 == 0) {
+//                System.out.println("Buzz: " + i);
+//            }
+//        }
+
+
+
+
+        Scanner word = new Scanner(System.in);
+
+        System.out.println("Do you want to use the table chart? Y for yes, N for No");
+
+
+        String userChoice = word.next();
+
+
+        if ((userChoice.toUpperCase().equals("Y"))) {
+            Scanner input = new Scanner(System.in);
+
+            System.out.print("Enter in a Number: ");
+            int userInput = input.nextInt();
+
+            System.out.println("Here is Your Table for The Number: " + userInput);
+
+            System.out.println("number  |  squared  |  cubed");
+            System.out.println("------  |  -------  |  -----");
+
+            for (long i = 1; i <= userInput; i++) {
+                long square = (long) Math.pow(i, 2);
+                long cubed = (long) Math.pow(i, 3);
+                System.out.println(i + "        |  " + square + "         |  " + cubed);
+            }
+
+            } else if (userChoice.toUpperCase().equals("N")) {
+                System.out.println("OK. Maybe Later Then.");
+            } else {
+                System.out.println("Error Invalid Input");
+            }
+
+
+
         }
-
-
     }
-}
+
