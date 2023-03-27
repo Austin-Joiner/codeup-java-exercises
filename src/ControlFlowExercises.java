@@ -60,15 +60,25 @@ public class ControlFlowExercises {
         //c question 2
         //1.b refactored question 1
 
-         for (int i = 0; i <= 100; i += 2) {
-            System.out.println(i);
-         }
-
-
-
+//         for (int i = 0; i <= 100; i += 2) {
+//            System.out.println(i);
+//         }
 
         //
         //c question 3
+        //1.b refactored question 2
+//        int i = 100;
+//            for (int i = 100; i >= -10; i -= 5) {
+//                System.out.println(i);
+//            }
+//
+        //
+        //c question 3
+        //1.b refactored question 3
+//        long i = 2;
+        for (long i = 2; i < 1000000; i *= i) {
+            System.out.println(i);
+        }
 
 
     }
