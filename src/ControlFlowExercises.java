@@ -152,7 +152,7 @@ public class ControlFlowExercises {
             continueGrade = word.next();
 
 
-            if(continueGrade.equals("Y")) {
+            if(continueGrade.toUpperCase().equals("Y")) {
                 Scanner input = new Scanner(System.in);
                 System.out.print("Enter in a grade from 0-100: ");
                 int userInput = input.nextInt();
@@ -188,12 +188,16 @@ public class ControlFlowExercises {
                     System.out.println("A");
                 } else if (userInput <= 100 && userInput >= 0) {
                     System.out.println("A+");
-
                 } else {
                     System.out.println("Error Invalid Input");
                 }
+            }
+            if (continueGrade.toUpperCase().equals("N")) {
+                System.out.println("Ok maybe later");
+            } else if (continueGrade.toUpperCase().equals("Y")) {
+                System.out.println("That is Your Grade");
             } else {
-                System.out.println("OK Maybe Later");
+                System.out.println("Error Invalid Input");
             }
         } while (continueGrade.toUpperCase().equals("Y"));
 
