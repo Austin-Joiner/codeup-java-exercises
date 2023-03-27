@@ -108,38 +108,96 @@ public class ControlFlowExercises {
 //        }
 
 
+        //question 3
+
+//        Scanner word = new Scanner(System.in);
+//
+//        System.out.println("Do you want to use the table chart? Y for yes, N for No");
+//
+//
+//        String userChoice = word.next();
+//
+//
+//        if ((userChoice.toUpperCase().equals("Y"))) {
+//            Scanner input = new Scanner(System.in);
+//
+//            System.out.print("Enter in a Number: ");
+//            int userInput = input.nextInt();
+//
+//            System.out.println("Here is Your Table for The Number: " + userInput);
+//
+//            System.out.println("number  |  squared  |  cubed");
+//            System.out.println("------  |  -------  |  -----");
+//
+//            for (long i = 1; i <= userInput; i++) {
+//                long square = (long) Math.pow(i, 2);
+//                long cubed = (long) Math.pow(i, 3);
+//                System.out.println(i + "        |  " + square + "         |  " + cubed);
+//            }
+//
+//            } else if (userChoice.toUpperCase().equals("N")) {
+//                System.out.println("OK. Maybe Later Then.");
+//            } else {
+//                System.out.println("Error Invalid Input");
+//            }
 
 
+            //Question 4
         Scanner word = new Scanner(System.in);
 
-        System.out.println("Do you want to use the table chart? Y for yes, N for No");
+        String continueGrade;
+
+        do {
+            System.out.println("Do you want Enter in a grade? Y for yes, N for No");
+            continueGrade = word.next();
 
 
-        String userChoice = word.next();
+            if(continueGrade.equals("Y")) {
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter in a grade from 0-100: ");
+                int userInput = input.nextInt();
 
 
-        if ((userChoice.toUpperCase().equals("Y"))) {
-            Scanner input = new Scanner(System.in);
+                if (userInput < 50 && userInput >= 0) {
+                    System.out.println("F-");
+                } else if (userInput < 54 && userInput >= 0) {
+                    System.out.println("F");
+                } else if (userInput < 60 && userInput >= 0) {
+                    System.out.println("F+");
+                } else if (userInput < 63 && userInput >= 0) {
+                    System.out.println("D-");
+                } else if (userInput < 64 && userInput >= 0) {
+                    System.out.println("D");
+                } else if (userInput < 67 && userInput >= 0) {
+                    System.out.println("D+");
+                } else if (userInput < 69 && userInput >= 0) {
+                    System.out.println("C-");
+                } else if (userInput < 77 && userInput >= 0) {
+                    System.out.println("C");
+                } else if (userInput < 80 && userInput >= 0) {
+                    System.out.println("C+");
+                } else if (userInput < 82 && userInput >= 0) {
+                    System.out.println("B-");
+                } else if (userInput < 85 && userInput >= 0) {
+                    System.out.println("B");
+                } else if (userInput < 88 && userInput >= 0) {
+                    System.out.println("B+");
+                } else if (userInput < 92 && userInput >= 0) {
+                    System.out.println("A-");
+                } else if (userInput < 97 && userInput >= 0) {
+                    System.out.println("A");
+                } else if (userInput <= 100 && userInput >= 0) {
+                    System.out.println("A+");
 
-            System.out.print("Enter in a Number: ");
-            int userInput = input.nextInt();
-
-            System.out.println("Here is Your Table for The Number: " + userInput);
-
-            System.out.println("number  |  squared  |  cubed");
-            System.out.println("------  |  -------  |  -----");
-
-            for (long i = 1; i <= userInput; i++) {
-                long square = (long) Math.pow(i, 2);
-                long cubed = (long) Math.pow(i, 3);
-                System.out.println(i + "        |  " + square + "         |  " + cubed);
-            }
-
-            } else if (userChoice.toUpperCase().equals("N")) {
-                System.out.println("OK. Maybe Later Then.");
+                } else {
+                    System.out.println("Error Invalid Input");
+                }
             } else {
-                System.out.println("Error Invalid Input");
+                System.out.println("OK Maybe Later");
             }
+        } while (continueGrade.toUpperCase().equals("Y"));
+
+
 
 
 
