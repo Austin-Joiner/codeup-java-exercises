@@ -6,12 +6,14 @@ public class Bob {
         Scanner phrase = new Scanner(System.in);
         System.out.println("Hey I am BOB, Do you want to talk to me or something?... yes or no bro!");
         String userChoice = word.nextLine();
-        System.out.println("What?");
+
+        if (userChoice.equalsIgnoreCase("Yes")) {
+            System.out.println("What?");
+        }
+
         while (userChoice.equalsIgnoreCase("yes")) {
 
-
             String userInput = phrase.nextLine();
-
 
             if (userChoice.equalsIgnoreCase("Yes")) {
 
