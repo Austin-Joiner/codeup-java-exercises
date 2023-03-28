@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 
     public static int adding(int x, int y) {
@@ -17,7 +19,7 @@ public class MethodsExercises {
     }
 
 
-
+    // multiply loop with recursion without recursion
 //    public static int multiplyLoop(int x, int y) {
 //        int total = 0;
 //        for (int i = 1; i <= x; i++) {
@@ -25,6 +27,8 @@ public class MethodsExercises {
 //        }
 //        return total;
 //    }
+
+    // multiply loop with recursion
         public static int multiplyLoop(int x, int y) {
             if (x == 0) {
                 return 0;
@@ -32,6 +36,25 @@ public class MethodsExercises {
                 return y + multiplyLoop(x - 1, y);
             }
          }
+
+
+    public static int getInteger(int min, int max) {
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+
+        Scanner input = new Scanner(System.in);
+        int userInput = input.nextInt();
+
+        if (userInput >= min && userInput <= max) {
+
+            System.out.printf("Good Job Your number is between %d amd %d \n", min, max);
+            return userInput;
+
+        } else {
+            System.out.println("TSK TSK that number is not between the range i gave you.");
+            return getInteger(min, max);
+        }
+
+    }
 
 
     public static void main(String[] args) {
@@ -42,5 +65,7 @@ public class MethodsExercises {
         System.out.println(remainder(10, 3));//1
 
         System.out.println(multiplyLoop(100, 2));//20
+
+        System.out.println(getInteger(1, 15));
     }
 }
