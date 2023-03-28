@@ -16,7 +16,7 @@ public class HighLow {
         Random randomNum = new Random();
 
             int random = randomNum.nextInt(100) + 1;
-            System.out.println(random);
+//            System.out.println(random);
             return random;
     }
 
@@ -33,7 +33,7 @@ public class HighLow {
         Scanner userScanner = new Scanner(System.in);
         System.out.println("Guess Count: " + guessCount);
 
-        if (guessCount < 5) {
+        if (guessCount < 7) {
 
 
             int userGuess = userScanner.nextInt();
@@ -74,7 +74,7 @@ public class HighLow {
                 guessNumber(rand);
             }
         } else {
-            System.out.println("You Lose! MUHAHAHA!");
+            System.out.println("You Lose! MUHAHAHA! The Number was: " + rand);
             gameslost += 1;
             guessCount = 0;
 
