@@ -1,5 +1,5 @@
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class HighLow {
 
@@ -10,20 +10,19 @@ public class HighLow {
     }
 
 
-
-
     public int randomNumber() {
         Random randomNum = new Random();
 
-            int random = randomNum.nextInt(100) + 1;
-//            System.out.println(random);
-            return random;
+        int random = randomNum.nextInt(100) + 1;
+        //            System.out.println(random);
+        return random;
     }
 
 
     int guessCount = 0;
     int gameWins = 0;
     int gameslost = 0;
+
     public void guessNumber(int rand) {
 
         System.out.println("Games won: " + gameWins);
@@ -46,7 +45,6 @@ public class HighLow {
 
                 System.out.println("Total Games Won: " + gameWins);
                 System.out.println("Total Games Lost: " + gameslost);
-
 
 
                 System.out.println("If you want to play again type in \"yes\"");
@@ -84,14 +82,13 @@ public class HighLow {
             System.out.println("If you want to play again type in \"yes\"");
             Scanner playAgainLost = new Scanner(System.in);
             String userPlayLost = playAgainLost.nextLine();
-                if (userPlayLost.equalsIgnoreCase("yes")) {
+            if (userPlayLost.equalsIgnoreCase("yes")) {
 
-                    guessNumber(randomNumber());//
+                guessNumber(randomNumber());//
 
-                } else {
-                    System.out.println("Goodbye.");
-                }
+            } else {
+                System.out.println("Goodbye.");
             }
         }
     }
-
+}
