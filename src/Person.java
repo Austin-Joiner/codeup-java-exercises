@@ -1,10 +1,20 @@
 import java.net.SocketOption;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Person {
 
     private String name;
+
+    public Person() {
+
+    }
+    public Person(String name) {
+
+        this.name = name;
+    }
+
     public String getName() {
 
 //TODO: return the person's name
@@ -16,14 +26,11 @@ public class Person {
     }
 
 
-    public Person(String myName) {
-
-        this.name = myName;
-    }
 
     public void sayHello() {
         System.out.printf("Hello, %s!%n", this.name);
     }
+
     public static void main(String[] args) {
 
         Person nameReturn = new Person("Austin");

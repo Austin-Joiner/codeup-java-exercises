@@ -12,60 +12,45 @@ public class Input {
     }
 
     public String getString() {
+        System.out.print("Type in a string: ");
         return scanner.nextLine();
     }
-//    boolean yesNo() {
-//        return scanner.nextLine();
-//        if(testtt.equals("yes")) {
-//            System.out.println("true");
-//        } else if (testtt.equals("no")) {
-//            System.out.println("false");
-//        } else {
-//            System.out.println("Invalid input try again");
-//        }
-//    }
-    int getInt(int min, int max) {
-        int inputs;
-        do {
+
+
+   public boolean yesNo() {
+       System.out.println("type in 'yes' for true or 'no' for false");
+        String input = scanner.nextLine();
+        return input.equalsIgnoreCase("yes");
+    }
+
+    public int[] getInt() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the minimum integer: ");
+        int min = scanner.nextInt();
+        System.out.print("Enter the maximum integer: ");
+        int max = scanner.nextInt();
+
+        return new int[] {min, max};
+    }
+
+    public int getInt(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
             System.out.printf("Enter an integer between %d and %d: ", min, max);
-            while (!scanner.hasNextInt()) {
-                System.out.println("invlaid Response. Try again.");
-                scanner.next();
+            int input = 0;
+            if (scanner.hasNextInt()) {
+                input = scanner.nextInt();
+                scanner.nextLine();
+                if (input >= min && input <= max) {
+                    return input;
+                }
+            } else {
+                scanner.nextLine();
             }
-            inputs = scanner.nextInt();
-            scanner.nextLine();
-        }while (inputs < min || inputs > max);
-        return inputs;
-    }
-    int getInt() {
-        while (!scanner.hasNextInt()) {
-            System.out.println("Invalid input. Please enter an integer.");
-            scanner.next();
+            System.out.printf("Invalid input. Please enter an integer between %d and %d.%n", min, max);
         }
-        int input = scanner.nextInt();
-        scanner.nextLine();
-        return input;
     }
-    double getDouble(double min, double max) {
-        double input;
-        do {
-            System.out.printf("Enter a double between %f and %f: ", min, max);
-            while (!scanner.hasNextDouble()) {
-                System.out.println("Invalid input. Please enter a double.");
-                scanner.next();
-            }
-            input = scanner.nextDouble();
-            scanner.nextLine();
-        } while (input < min || input > max);
-        return input;
+
     }
-    double getDouble() {
-        while (!scanner.hasNextDouble()) {
-            System.out.println("Invalid input. Please enter a double.");
-            scanner.next();
-        }
-        double input = scanner.nextDouble();
-        scanner.nextLine();
-        return input;
-    }
-}
