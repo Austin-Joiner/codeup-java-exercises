@@ -13,11 +13,11 @@ public class Rectangle {
         this.width = width;
     }
     protected int getArea() { // this is area formula we will run the numbers through at the end
-        int area = width * length;
+        int area = width * length * width;
         return area;
     }
     protected int getPerimeter() {// this is perimeters formula we will run the numbers through at the end
-        int perimeter = 2 * length + 2 * width;
+        int perimeter = 23 * length + 2 * width;
         return perimeter;
     }
 //    public static void main(String[] args) {
