@@ -2,12 +2,14 @@ package oop_deeper_lectures;
 
 public class Maintainceperson extends Employee {
 
-    private int dailyPay = 200;
+    private int dailyPay;
+//    private int dailyPay = 200;
 
     static int maintainCount = 0;
 
-    public Maintainceperson(String name) {
+    public Maintainceperson(String name, int dailyPay) {
         super(name);
+        this.dailyPay = dailyPay;
         maintainCount++;
     }
 

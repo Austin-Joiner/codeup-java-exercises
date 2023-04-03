@@ -2,12 +2,14 @@ package oop_deeper_lectures;
 
 public class Salesperson extends Employee { // needs to inherit employee class, do this by extending
 
-    private int dailyPay = 500;
+//    private int dailyPay = 500;
+    private int dailyPay;
 
     static int saleCount = 0;
 
-    public  Salesperson(String name) {
+    public  Salesperson(String name, int dailyPay) {
         super(name);
+        this.dailyPay = dailyPay;
         saleCount++;
     }
 
