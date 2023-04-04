@@ -15,9 +15,24 @@ public class ShapesTest {
 
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~\n");
 
-        Rectangle box2 = new Square(5);
+        Square box2 = new Square(5);
         System.out.println("Area of my Square(box2): " + box2.getArea());
         System.out.println("Perimeter of my Square(box2): " + box2.getPerimeter());
+
+
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("Below is measurable/ interface and abstracts");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+        Measurable myShape = new Rectangle(5, 10);
+        System.out.println("Area of myShape rectangle is: " + myShape.getArea());
+        System.out.println("Perimeter of myShape rectangle is: " + myShape.getPerimeter());
+
+        myShape = new Square(10);
+        System.out.println("Area of myShape square is: " + myShape.getArea());
+        System.out.println("Perimeter of myShape square is: " + myShape.getPerimeter());
+
+
 
 
 //        Square mySquare = new Square(5);
